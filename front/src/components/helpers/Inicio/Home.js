@@ -8,24 +8,24 @@ export const Home = () => {
       <h1 className="tituloPrincipal mb-3">EMPRESA SYS</h1>
       <section
         id="carouselExampleControlsNoTouching"
-        className="carousel slide"
+        className="carousel "
         data-bs-touch="false"
       >
         <section className="carousel-inner mt-5">
           <section className="carousel-item active">
-            <img src={img1} className="img1 d-block w-100"alt="..."/>
+            <img src={img1} className="img1 d-block w-80"alt="..."/>
           </section>
           <section className="carousel-item">
             <img
               src={img2}
-              className="d-block w-100"
+              className="d-block w-80"
               alt="..."
             />
           </section>
           <section className="carousel-item">
             <img
               src={img3}
-              className="d-block w-100"
+              className="d-block w-80"
               alt="..."
             />
           </section>
