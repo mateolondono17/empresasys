@@ -2,7 +2,7 @@ import { DataTypes } from "sequelize";
 import baseDatos from "../database/conexionBaseDatos.js";
 
 
-const Cliente = baseDatos.define('clientes', {
+const Proveedor = baseDatos.define('proveedores', {
     nombre: {
         type:DataTypes.STRING
     },
@@ -11,4 +11,4 @@ const Cliente = baseDatos.define('clientes', {
     }
 })
 
-export default Cliente;
+export default Proveedor;
