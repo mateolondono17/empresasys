@@ -1,4 +1,4 @@
-import Cliente from "../models/productoModel.js";
+import Cliente from "../models/clienteModel.js";
 
 
 
@@ -49,22 +49,34 @@ const crearCliente = async (req, res) => {
 };
 
 
-
-
 const editarCliente = async (req, res) =>{
     try {
-        
+        await Cliente.update(req.body,{
+            where: {id: req.params.id}
+        });
+        res.json({
+            message: 'Cliente Editado Correctamente'
+        });
     } catch (error) {
-        
+        res.json({
+            message: error.message
+        });
     }
 };
 
 
 const eliminarCliente = async (req, res) =>{
     try {
-        
+        Cliente.destroy({
+            where: {id: req.params.id}
+        });
+        res.json({
+            message:'Cliente Eliminado Correctamente'
+        })
     } catch (error) {
-        
+        res.json({
+            message: error.message
+        });
     }
 };
 
@@ -72,5 +84,7 @@ const eliminarCliente = async (req, res) =>{
 export {
     crearCliente,
     mostrarCliente,
-    mostrarClientes
+    mostrarClientes,
+    editarCliente,
+    eliminarCliente
 }
