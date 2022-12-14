@@ -4,8 +4,8 @@ import Producto from "../models/productoModel.js";
 
 const mostrarProducto = async (req, res) =>{
     try {
-        const Producto = await Producto.findOne({where: {id: req.params.id}})
-        res.json(Producto)
+        const producto = await producto.findOne({where: {id: req.params.id}})
+        res.json(producto)
       } catch (error) {
         res.json({
           message: "producto no existe: "+ error
@@ -18,11 +18,13 @@ const mostrarProducto = async (req, res) =>{
 
     const mostrarProductos = async (req, res) =>{
         try {
-            const Producto = await Producto.findAll()
-            res.json(Producto)
+            const producto = await producto.findAll()
+            res.json(producto)
           } catch (error) {
             res.json({
-              message: "base de datos vacia"
+              message: "base de datos vacia",
+              
+               
             })
             
           }

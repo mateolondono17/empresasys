@@ -15,8 +15,8 @@ const mostrarProveedor = async (req, res) =>{
 
     const mostrarProveedores = async (req, res) =>{
         try {
-            const Proveedor = await Proveedor.findAll()
-            res.json(Proveedor)
+            const proveedor = await Proveedor.findAll()
+            res.json(proveedor)
           } catch (error) {
             res.json({
               message: "base de datos vacia"

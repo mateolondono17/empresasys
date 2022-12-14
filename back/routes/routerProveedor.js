@@ -1,10 +1,14 @@
 import express from 'express'
-import { crearProveedor, mostrarProveedor, mostrarProveedores } from '../controllers/proveedoresController.js'
+import { crearProveedor, editarProveedor, eliminarProveedor, mostrarProveedor, mostrarProveedores } from '../controllers/proveedoresController.js'
 
 const proveedorRouter = express.Router();
 
 proveedorRouter.post('/', crearProveedor)
-proveedorRouter.post('/:id', mostrarProveedor)
-proveedorRouter.post('/', mostrarProveedores)
+proveedorRouter.get('/', mostrarProveedores)
+proveedorRouter.get('/:id', mostrarProveedor)
+proveedorRouter.delete('/:id', eliminarProveedor)
+proveedorRouter.put('/:id', editarProveedor)
+
+
 
 export default proveedorRouter;
