@@ -49,12 +49,18 @@ const crearProducto = async (req, res) => {
 };
 
 
-
-
 const editarProducto = async (req, res) =>{
     try {
-        
+        await Producto.update(req.body,{
+            where: {id: req.params.id}
+        });
+        res.json({
+            message:'Producto Editado Correctamente '
+        });
     } catch (error) {
+        res.json({
+            message: error.message
+        });
         
     }
 };
@@ -64,9 +70,16 @@ const editarProducto = async (req, res) =>{
 
 const eliminarProducto = async (req, res) =>{
     try {
-        
+        await Producto.destroy({
+            where: { id: req.params.id},
+        })
+        res.json({
+            message: 'Producto Eliminado Correctamente'
+        })
     } catch (error) {
-        
+        res.json({
+            message: error.message,
+        });
     }
 };
 
@@ -76,5 +89,7 @@ const eliminarProducto = async (req, res) =>{
 export{
     mostrarProducto,
     mostrarProductos,
-    crearProducto
+    crearProducto,
+    editarProducto,
+    eliminarProducto
 }

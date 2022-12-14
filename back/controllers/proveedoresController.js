@@ -1,4 +1,4 @@
-import Proveedor from "../models/productoModel.js";
+import Proveedor from "../models/proveedorModel.js";
 
 const mostrarProveedor = async (req, res) =>{
     try {
@@ -47,23 +47,40 @@ const mostrarProveedor = async (req, res) =>{
     
     const editarProveedor = async (req, res) =>{
         try {
-            
+            await Proveedor.update(req.body,{
+                where: { id: req.params.id},
+            })
+            res.json({
+                message: 'Proveedor Editado Correctamente'
+            })
         } catch (error) {
-            
+            res.json({
+                message: error.message
+            });
         }
 };
     
     
     const eliminarProveedor = async (req, res) =>{
         try {
+            await Proveedor.destroy({
+                where: {id: req.params.id},
+            });
+            res.json({
+                message: 'Proveedor Eliminado Correctamente'
+            });
             
         } catch (error) {
-            
+            res.json({
+                message: error.message
+            });
         }
 };
 
 export {
     mostrarProveedor,
     mostrarProveedores,
-    crearProveedor
+    crearProveedor,
+    eliminarProveedor,
+    editarProveedor
 }
