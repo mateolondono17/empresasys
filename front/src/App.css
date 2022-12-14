@@ -63,3 +63,17 @@ background-color: #100626;
 top: 0;
 margin-left: 22%;
 }
+
+/* vista producto */
+.tituloProducto{
+    color: #E68DF2;
+    font-size: 44px;
+    text-align:center ;
+}
+
+.tablaProducto{
+    width: 80vh !important;
+}
+.bodyTabla{
+    
+}
