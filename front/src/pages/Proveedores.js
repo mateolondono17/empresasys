@@ -1,12 +1,13 @@
 
 import { ConexionProducto } from "../components/helpers/vistaProducto/ConexionProducto";
-import { Titulo } from "../components/helpers/vistaProducto/Titulo";
+    
+import TituloProveedores from "../components/helpers/vistaProducto/TituloProveedores";
 
 
-const Productos = () => {
+const Proveedores = () => {
     return(
         <section>
-          <Titulo/>
+          <TituloProveedores/>
         <ConexionProducto/>
         
       </section>
@@ -15,4 +16,4 @@ const Productos = () => {
     )
 };
 
-export default Productos
+export default Proveedores;

@@ -6,8 +6,10 @@ import { Titulo } from './Titulo'
 export const ConexionProducto = () => {
   return (
     <section>
-        <Titulo/>
+        
+        <section className='bodyTabla'>
         <TablaProducto/>
+        </section>
         
     </section>
   )

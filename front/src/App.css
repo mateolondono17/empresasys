@@ -17,6 +17,44 @@ body{
     
 }
 
+
+.botonProducto{
+    background-color: #AE4AD9 !important;
+    width: 50vh;
+    height: 40%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 45%;
+
+}
+
+.tabla{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.tr{
+    background-color:#AE4AD9;;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tablaProducto, table{
+    width: 100vh;
+    height: 40%;
+    gap: 10px;
+    display: flex;
+    margin-left: 25%;
+    
+    
+
+}
+
 .sectionLink{
     display: flex !important;
     justify-content: center !important;
@@ -47,21 +85,24 @@ body{
 
 /* inicio */
 .imgs{
-    width: 100vh;
-    height: 100vh;
-    display: flex;
-    justify-items: center !important;
-    justify-content: center !important;
-    align-items: center !important ;
-    flex-direction: column !important;
-    
-    
 
+    width: 100vh;   
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+    margin-left: 20%;
 }
+
 .tituloPrincipal{
     color: #E68DF2;
-    font-size: 44px;
-}
+    font-weight: 600;
+    font: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35%;
+    margin-top: 30px;
+    }
 
 /*main*/
 main{
@@ -76,20 +117,9 @@ margin-left: 22%;
 .tituloProducto{
     color: #E68DF2;
     font-size: 44px;
+    margin-left: 40%;
     text-align:center ;
 }
-
-.tablaProducto{
-    width: 80vh !important;
-}
-.bodyTabla{
-    
-}
-
-
-
-
-
 
 
 body {
@@ -127,8 +157,6 @@ a:focus {
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
-
-
 
 #sidebar {
     min-width: 350px;
@@ -194,5 +222,3 @@ a.download {
     background: #fff;
     color: #5A278C;
 }
-
-

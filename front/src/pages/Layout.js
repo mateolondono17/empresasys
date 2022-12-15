@@ -29,10 +29,10 @@ const Layout = () => {
 
                 </li>
                 <li className="w-75">
-                <Link to="/Clientes" className="item text-center my-1">Proveedores</Link>
+                <Link to="/Proveedores" className="item text-center my-1">Proveedores</Link>
                 </li>
                 <li className="w-75">
-                <Link to="/Proveedores" className="item text-center my-1">Clientes</Link>
+                <Link to="/Clientes" className="item text-center my-1">Clientes</Link>
                 </li>
             </ul>
 

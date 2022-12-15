@@ -1,12 +1,11 @@
-
 import { ConexionProducto } from "../components/helpers/vistaProducto/ConexionProducto";
-import { Titulo } from "../components/helpers/vistaProducto/Titulo";
+import TituloClientes from "../components/helpers/vistaProducto/TituloClientes";
 
 
-const Productos = () => {
+const Clientes = () => {
     return(
         <section>
-          <Titulo/>
+            <TituloClientes/>
         <ConexionProducto/>
         
       </section>
@@ -15,4 +14,4 @@ const Productos = () => {
     )
 };
 
-export default Productos
+export default Clientes;

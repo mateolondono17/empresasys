@@ -5,11 +5,13 @@ import img1 from '../../src/assets/img/imgCarrusel1.png'
 import img2 from '../../src/assets/img/imgCarrusel2.png'
 import img3 from '../../src/assets/img/imgCarrusel3.png'
 
+
+
 const Home = () => {
     return (
-      <section className='d-flex justify-content-center w-100'>
+      <section className='carrusel justify-content-center '>
+      <h1 className="tituloPrincipal font-size-xl">EMPRESA SYS</h1>
       <section className="imgs">
-      <h1 className="tituloPrincipal mb-3">EMPRESA SYS</h1>
       <section
         id="carouselExampleControlsNoTouching"
         className="carousel "
@@ -17,19 +19,19 @@ const Home = () => {
       >
         <section className="carousel-inner mt-5">
           <section className="carousel-item active">
-            <img src={img1} className="img1 d-block w-80"alt="..."/>
+            <img src={img1} className="img1 d-block w-  "alt="..."/>
           </section>
           <section className="carousel-item">
             <img
               src={img2}
-              className="d-block w-80"
+              className="d-block w-"
               alt="..."
             />
           </section>
           <section className="carousel-item">
             <img
               src={img3}
-              className="d-block w-80"
+              className="d-block "
               alt="..."
             />
           </section>
