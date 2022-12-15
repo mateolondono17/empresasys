@@ -1,32 +1,27 @@
+import  ReactDOM  from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "../src/App.css"
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
+import NoPage from "./pages/NoPage";
+import Productos from "./pages/Productos";
 
-import './App.css';
-import { BarraLateral } from './components/helpers/barraLateral/BarraLateral';
-import {Main} from './components/layouts/Main';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Home } from './components/helpers/Inicio/Home';
-import { ConexionProducto } from './components/helpers/vistaProducto/ConexionProducto';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Home /> 
-  },
-  {
-    path: '/productos',
-    element: <ConexionProducto />
-  }
-  
-])
-function App() {
+export default function App() {
   return (
-    <section className="">
-      <RouterProvider router={router} />
-      <BarraLateral/>
-      <Main/>
-      
-    </section>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+        <Route path="Productos" element={<Productos />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-
-export default App;

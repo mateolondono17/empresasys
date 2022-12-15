@@ -1,7 +1,7 @@
 import express from 'express';
 import baseDatos from './database/conexionBaseDatos.js';
 import cors from'cors';
-import productoRouter from './routes/routerProducto.js';
+import routerProducto from './routes/routerProducto.js'
 import proveedorRouter from './routes/routerProveedor.js';
 import clienteRouter from './routes/routerCliente.js';
 
@@ -20,7 +20,7 @@ try {
 app.use(express.json())
 app.use(cors())
 
-app.use('/productos', productoRouter)
+app.use('/productos', routerProducto)
 app.use('/clientes', clienteRouter)
 app.use('/proveedores', proveedorRouter)
 

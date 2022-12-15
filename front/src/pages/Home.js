@@ -1,10 +1,14 @@
+
 import React from 'react'
-import img1 from '../../../../src/assets/img/imgCarrusel1.png'
-import img2 from '../../../../src/assets/img/imgCarrusel2.png'
-import img3 from '../../../../src/assets/img/imgCarrusel3.png'
-export const Home = () => {
-  return (
-    <section className="imgs">
+import "../../src/App.css"   
+import img1 from '../../src/assets/img/imgCarrusel1.png'
+import img2 from '../../src/assets/img/imgCarrusel2.png'
+import img3 from '../../src/assets/img/imgCarrusel3.png'
+
+const Home = () => {
+    return (
+      <section className='d-flex justify-content-center w-100'>
+      <section className="imgs">
       <h1 className="tituloPrincipal mb-3">EMPRESA SYS</h1>
       <section
         id="carouselExampleControlsNoTouching"
@@ -56,5 +60,11 @@ export const Home = () => {
         </button>
       </section>
     </section>
-  )
-};
+    </section>
+      
+
+    )
+      
+  };
+  
+  export default Home;
