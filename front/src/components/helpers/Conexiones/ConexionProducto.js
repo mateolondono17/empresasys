@@ -1,7 +1,6 @@
 import React from 'react'
-import { BarraLateral } from '../barraLateral/BarraLateral'
-import { TablaProducto } from './TablaProducto'
-import { Titulo } from './Titulo'
+import { TablaProducto } from '../Tablas/TablaProducto'
+
 
 export const ConexionProducto = () => {
   return (

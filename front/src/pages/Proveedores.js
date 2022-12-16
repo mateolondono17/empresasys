@@ -1,14 +1,12 @@
-
-import { ConexionProducto } from "../components/helpers/vistaProducto/ConexionProducto";
-    
-import TituloProveedores from "../components/helpers/vistaProducto/TituloProveedores";
+import { ConexionProveedores } from "../components/helpers/Conexiones/ConexionProveedores";
+import TituloProveedores from "../components/layouts/Titulos/TituloProveedores";
 
 
 const Proveedores = () => {
     return(
         <section>
           <TituloProveedores/>
-        <ConexionProducto/>
+          <ConexionProveedores/>
         
       </section>
 

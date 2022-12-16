@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const apiProductos = "http://localhost:3000/productos";
+const apiProductos = "http://localhost:3100/productos";
 
 export const TablaProducto = () => {
   const [productos, setProductos] = useState([]);
@@ -18,31 +18,31 @@ export const TablaProducto = () => {
   };
 
   return (
-    <section>
+    <section className="d-flex prueba justify-content-center flex-column ml-5">
       <section>
-        <Link to={"/crear"} className="botonProducto mt-5  btn">
+        <Link to={"/crearProductos"} className="botonProducto mt-5 btn">
           Nuevo producto
         </Link>
       </section>
       <table className="table tabla table-striped">
-        <thead className="m-5 tablaProducto space-between w-80  ">
-          <tr className="tr">
+        <thead className="m-5 thead ">
+          <tr className="tr encabezado">
             <th scope="col">Nombre</th>
             <th scope="col">Descripcion</th>
             <th scope="col">Acciones</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="tbody">
           {productos.map((producto) => (
             <tr className="text-center w-80" key={producto.id}>
-              <td>{producto.nombre}</td>
-              <td>{producto.descripcion}</td>
+              <td className="text-white">{producto.nombre}</td>
+              <td className="text-white"> {producto.descripcion}</td>
               <td>
-                <Link className="btn w-80" to={"/editar"}>
+                <Link className=" text-white  btn w-80" to={"/editar"}>
                   Editar
                 </Link>{" "}
                 {"| "}
-                <Link className="btn w-80" to={"eliminar"}>
+                <Link className="text-white btn w-80" to={"eliminar"}>
                   Eliminar
                 </Link>
               </td>
@@ -50,6 +50,8 @@ export const TablaProducto = () => {
           ))}
         </tbody>
       </table>
-    </section>
+      </section>
+    
+    
   );
 };

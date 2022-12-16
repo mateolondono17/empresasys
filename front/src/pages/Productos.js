@@ -1,6 +1,6 @@
 
-import { ConexionProducto } from "../components/helpers/vistaProducto/ConexionProducto";
-import { Titulo } from "../components/helpers/vistaProducto/Titulo";
+import { ConexionProducto } from "../components/helpers/Conexiones/ConexionProducto";
+import { Titulo } from "../components/layouts/Titulos/Titulo";
 
 
 const Productos = () => {

@@ -9,50 +9,84 @@ body{
     height: 20%;
 }
 
+.formulario{
+    background-color:#AE4AD9 !important;
+    width: 50vh !important;
+    height: 100%;
+    flex-direction: column;
+    margin-left: 110%;
+    
+}
+
+.imagenPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    margin-top: 150px;
+    margin-left: 200px;
+    width: 100vh;
+    height: 60%;
+}
+
+.btnFormulario{
+    background-color: #5A278C !important;
+}
+
 .redes{
     display: flex;
-    margin-top: 160px;
+    margin-top: 250px;
     justify-content: space-between;
     
     
+}
+.prueba{
+    width: 1000px;
+    margin-left: 200px;
+    display: flex;
+    color: #AE4AD9;
+}
+
+th{
+    color: #AE4AD9;
+}
+
+.tbody{
+    background-color: #5A278C !important;
+    color: #AE4AD9;
+    margin-left: 90% !important;
+}
+
+.thead  {
+    color: #AE4AD9;
+    margin-top: 20% !important;
+    background-color: #5A278C !important;
+    margin-left: 90% !important;
+}
+
+.encabezado {
+    color: #AE4AD9;
+    background-color:#5A278C ;
+    margin-top: 20%;
+
 }
 
 
 .botonProducto{
     background-color: #AE4AD9 !important;
+    color: #220C40 !important;
+    font-weight: 700;
     width: 50vh;
     height: 40%;
     gap: 10px;
     display: flex;
     align-items: center;
-    margin-left: 45%;
+    margin-left: 26%;
+    margin-bottom: 30px;
 
 }
-
-.tabla{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-}
-
-.tr{
-    background-color:#AE4AD9;;
-    width: 800px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.tablaProducto, table{
-    width: 100vh;
-    height: 40%;
-    gap: 10px;
-    display: flex;
-    margin-left: 25%;
-    
-    
-
+.botonProducto:hover{
+    color: #AE4AD9;
+    background-color: #5A278C;
 }
 
 .sectionLink{
@@ -97,11 +131,6 @@ body{
     color: #E68DF2;
     font-weight: 600;
     font: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 35%;
-    margin-top: 30px;
     }
 
 /*main*/
@@ -117,7 +146,7 @@ margin-left: 22%;
 .tituloProducto{
     color: #E68DF2;
     font-size: 44px;
-    margin-left: 40%;
+    margin-left: 15%;
     text-align:center ;
 }
 
@@ -143,14 +172,7 @@ a:focus {
     transition: all 0.3s;
 }
 
-.navbar {
-    padding: 15px 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
+
 
 
 
@@ -194,7 +216,7 @@ a:focus {
 
 #sidebar ul li a:hover {
     color: #5A278C;
-    background: #fff;
+    background:#AE4AD9;
 }
 
 #sidebar ul li.active>a,
